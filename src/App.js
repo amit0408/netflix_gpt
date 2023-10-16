@@ -1,8 +1,9 @@
+import React from "react";
+import Body from "./components/Body";
+
 function App() {
   return (
-    <div className="text-lime-600 text-5xl p-5 ">
-      <p>HELLO NETFLIX WELCOME !!!!</p>
-    </div>
+   <Body/>
   );
 }
 

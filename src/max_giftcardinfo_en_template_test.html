@@ -1,0 +1,2183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Card</title>
+    <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+        /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+        @import url(//fonts.googleapis.com/earlyaccess/notokufiarabic.css);
+
+        body,
+        html {
+            direction: ltr
+        }
+
+        body,
+        figure {
+            margin: 0
+        }
+
+        fieldset,
+        img {
+            border: 0
+        }
+
+        .btn,
+        [role=button] {
+            cursor: pointer
+        }
+
+        .btn,
+        .btn-primary:active,
+        .btn:active,
+        .form-control {
+            background-image: none
+        }
+
+        .btn-group>.btn,
+        .btn-group>.btn-group,
+        .error-left {
+            float: left
+        }
+
+        .btn,
+        .btn-group,
+        .input-group-btn,
+        img {
+            vertical-align: middle
+        }
+
+        .btn,
+        .input-group-btn,
+        .label {
+            white-space: nowrap
+        }
+
+        .btn .label,
+        .btn-group,
+        .btn-group>.btn,
+        .input-group,
+        .input-group .form-control,
+        .input-group-btn,
+        .input-group-btn>.btn,
+        .split-banner-div {
+            position: relative
+        }
+
+        [class*=" icon-"],
+        [class^=icon-],
+        body,
+        html {
+            -moz-osx-font-smoothing: grayscale
+        }
+
+        .container:after,
+        .promocode,
+        .row:after {
+            clear: both
+        }
+
+        .giftCardWrapper__details .gift-text,
+        .text-left {
+            text-align: left
+        }
+
+        html {
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased
+        }
+
+        article,
+        details,
+        figure,
+        header {
+            display: block
+        }
+
+        .label:empty,
+        .promocode .message i.icon:before,
+        [hidden] {
+            display: none
+        }
+
+        a {
+            background-color: transparent
+        }
+
+        .form-control,
+        body {
+            background-color: #fff
+        }
+
+        a:active,
+        a:focus,
+        a:hover,
+        button:focus {
+            outline: 0
+        }
+
+        h1 {
+            margin: .67em 0
+        }
+
+        svg:not(:root) {
+            overflow: hidden
+        }
+
+        button,
+        input,
+        select {
+            color: inherit;
+            font: inherit;
+            margin: 0
+        }
+
+        button {
+            overflow: visible
+        }
+
+        button,
+        select {
+            text-transform: none
+        }
+
+        button,
+        html input[type=button],
+        input[type=reset],
+        input[type=submit] {
+            -webkit-appearance: button;
+            cursor: pointer
+        }
+
+        button[disabled],
+        html input[disabled] {
+            cursor: default
+        }
+
+        button::-moz-focus-inner,
+        input::-moz-focus-inner {
+            border: 0;
+            padding: 0
+        }
+
+        input {
+            line-height: normal
+        }
+
+        input[type=checkbox],
+        input[type=radio] {
+            box-sizing: border-box;
+            padding: 0
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            height: auto
+        }
+
+        input[type=search] {
+            -webkit-appearance: textfield;
+            -moz-box-sizing: content-box;
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box
+        }
+
+        input[type=search]::-webkit-search-cancel-button,
+        input[type=search]::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        *,
+        :after,
+        :before {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+        html {
+            font-size: 10px;
+            -webkit-tap-highlight-color: transparent;
+            height: 100%;
+            overflow-y: auto
+        }
+
+        body {
+            font-family: ProximaNova-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            line-height: 1.24;
+            color: #3d464d;
+            font-smoothing: antialiased;
+            -webkit-font-smoothing: antialiased;
+            -webkit-overflow-scrolling: touch;
+            min-width: 300px;
+            overflow-x: hidden
+        }
+
+        button,
+        input,
+        select {
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit
+        }
+
+        a,
+        a:focus,
+        a:hover {
+            color: #000;
+            text-decoration: none
+        }
+
+        a:focus {
+            outline: -webkit-focus-ring-color auto 5px;
+            outline-offset: -2px
+        }
+
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: inherit;
+            font-weight: 400;
+            line-height: 1.1;
+            color: inherit
+        }
+
+        .h1,
+        .h2,
+        .h3,
+        h1,
+        h2,
+        h3 {
+            margin-top: 16px;
+            margin-bottom: 8px
+        }
+
+        .h4,
+        .h5,
+        .h6,
+        h4,
+        h5,
+        h6 {
+            margin-top: 8px;
+            margin-bottom: 8px
+        }
+
+        .h1,
+        h1 {
+            font-size: 33px
+        }
+
+        .h2,
+        h2 {
+            font-size: 20.02px
+        }
+
+        .h3,
+        h3 {
+            font-size: 23px
+        }
+
+        .h4,
+        h4 {
+            font-size: 17px
+        }
+
+        .h5,
+        h5 {
+            font-size: 13px
+        }
+
+        .h6,
+        h6 {
+            font-size: 12px
+        }
+
+        p {
+            margin: 0 0 8px
+        }
+
+        .text-right {
+            text-align: right
+        }
+
+        .btn,
+        .giftCardWrapper__details,
+        .giftCardWrapper__details__title,
+        .label,
+        .text-center {
+            text-align: center
+        }
+
+        .text-primary {
+            color: #1eb4e1
+        }
+
+        a.text-primary:hover {
+            color: #1890b4
+        }
+
+        .page-header {
+            padding-bottom: 7px;
+            margin: 32px 0 16px;
+            border-bottom: 1px solid #eee
+        }
+
+        .container,
+        .container-fluid {
+            margin-right: auto;
+            margin-left: auto
+        }
+
+        ol,
+        ul {
+            margin-top: 0;
+            margin-bottom: 8px
+        }
+
+        ol ol,
+        ol ul,
+        ul ol,
+        ul ul {
+            margin-bottom: 0
+        }
+
+        .container {
+            padding-left: 6px;
+            padding-right: 6px
+        }
+
+        .container-fluid:after,
+        .container-fluid:before,
+        .container:after,
+        .container:before,
+        .row:after,
+        .row:before {
+            content: " ";
+            display: table
+        }
+
+        @media (min-width:768px) {
+            .container {
+                width: 732px
+            }
+
+            .col-sm-1,
+            .col-sm-10,
+            .col-sm-11,
+            .col-sm-12,
+            .col-sm-2,
+            .col-sm-3,
+            .col-sm-4,
+            .col-sm-5,
+            .col-sm-6,
+            .col-sm-7,
+            .col-sm-8,
+            .col-sm-9 {
+                float: left
+            }
+
+            .col-sm-1 {
+                width: 8.3333333333%
+            }
+
+            .col-sm-2 {
+                width: 16.6666666667%
+            }
+
+            .col-sm-3 {
+                width: 25%
+            }
+
+            .col-sm-4 {
+                width: 33.3333333333%
+            }
+
+            .col-sm-5 {
+                width: 41.6666666667%
+            }
+
+            .col-sm-6 {
+                width: 50%
+            }
+
+            .col-sm-7 {
+                width: 58.3333333333%
+            }
+
+            .col-sm-8 {
+                width: 66.6666666667%
+            }
+
+            .col-sm-9 {
+                width: 75%
+            }
+
+            .col-sm-10 {
+                width: 83.3333333333%
+            }
+
+            .col-sm-11 {
+                width: 91.6666666667%
+            }
+
+            .col-sm-12 {
+                width: 100%
+            }
+        }
+
+        @media (min-width:1024px) {
+            .container {
+                width: 952px
+            }
+        }
+
+        @media (min-width:1240px) {
+            .container {
+                width: 1152px
+            }
+        }
+
+        .row {
+            margin-left: -6px;
+            margin-right: -6px
+        }
+
+        .col-sm-1,
+        .col-sm-10,
+        .col-sm-11,
+        .col-sm-12,
+        .col-sm-2,
+        .col-sm-3,
+        .col-sm-4,
+        .col-sm-5,
+        .col-sm-6,
+        .col-sm-7,
+        .col-sm-8,
+        .col-sm-9 {
+            position: relative;
+            min-height: 1px;
+            padding-left: 6px;
+            padding-right: 6px
+        }
+
+        fieldset {
+            padding: 0;
+            margin: 0;
+            min-width: 0
+        }
+
+        label {
+            display: inline-block;
+            max-width: 100%;
+            margin-bottom: 5px;
+            font-weight: 700
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            height: 42px;
+            padding: 6px 12px;
+            font-size: 13px;
+            line-height: 1.24;
+            color: #555;
+            border: 1px solid #c8c9c6;
+            border-radius: 2px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075)
+        }
+
+        .btn,
+        .btn-group {
+            display: inline-block
+        }
+
+        .form-control:focus {
+            outline: 0;
+            border: 1px solid #c8c9c6;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(200, 201, 198, .6);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(200, 201, 198, .6)
+        }
+
+        .form-control::-moz-placeholder {
+            color: #919497;
+            opacity: 1
+        }
+
+        .form-control:-ms-input-placeholder {
+            color: #919497
+        }
+
+        .form-control::-webkit-input-placeholder {
+            color: #919497
+        }
+
+        .form-control[disabled],
+        .form-control[readonly],
+        fieldset[disabled] .form-control {
+            background-color: #eee;
+            opacity: 1
+        }
+
+        .form-control[disabled],
+        fieldset[disabled] .form-control {
+            cursor: not-allowed
+        }
+
+        .form-group {
+            margin-bottom: 15px
+        }
+
+        .form-group-sm .form-control {
+            height: 30px;
+            padding: 5px 10px;
+            font-size: 12px;
+            line-height: 1.5;
+            border-radius: 3px
+        }
+
+        .form-group-sm select.form-control {
+            height: 30px;
+            line-height: 30px
+        }
+
+        .form-group-sm select[multiple].form-control {
+            height: auto
+        }
+
+        .btn {
+            margin-bottom: 0;
+            touch-action: manipulation;
+            border: 1px solid transparent;
+            border-radius: 2px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none
+        }
+
+        .btn:active:focus,
+        .btn:focus {
+            outline: dotted thin;
+            outline: -webkit-focus-ring-color auto 5px;
+            outline-offset: -2px
+        }
+
+        .btn:focus,
+        .btn:hover {
+            color: #333;
+            text-decoration: none
+        }
+
+        .btn:active {
+            outline: 0;
+            -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+            box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+        }
+
+        .btn[disabled],
+        fieldset[disabled] .btn {
+            cursor: not-allowed;
+            pointer-events: none;
+            opacity: .65;
+            -webkit-box-shadow: none;
+            box-shadow: none
+        }
+
+        .btn-primary,
+        .btn-primary:active,
+        .btn-primary:focus,
+        .btn-primary:hover {
+            color: #fff;
+            background-color: #303ab2;
+            border-color: #303ab2
+        }
+
+        .btn-primary[disabled],
+        .btn-primary[disabled]:active,
+        .btn-primary[disabled]:focus,
+        .btn-primary[disabled]:hover,
+        fieldset[disabled] .btn-primary,
+        fieldset[disabled] .btn-primary:active,
+        fieldset[disabled] .btn-primary:focus,
+        fieldset[disabled] .btn-primary:hover {
+            background-color: #303ab2;
+            border-color: #303ab2
+        }
+
+        .btn-link {
+            color: #303ab2;
+            font-weight: 400;
+            border-radius: 0
+        }
+
+        .btn-link,
+        .btn-link:active,
+        .btn-link[disabled],
+        fieldset[disabled] .btn-link {
+            background-color: transparent;
+            -webkit-box-shadow: none;
+            box-shadow: none
+        }
+
+        .btn-link,
+        .btn-link:active,
+        .btn-link:focus,
+        .btn-link:hover {
+            border-color: transparent
+        }
+
+        .btn-link:focus,
+        .btn-link:hover {
+            color: #303ab2;
+            text-decoration: underline;
+            background-color: transparent
+        }
+
+        .btn-link[disabled]:focus,
+        .btn-link[disabled]:hover,
+        fieldset[disabled] .btn-link:focus,
+        fieldset[disabled] .btn-link:hover {
+            color: #777;
+            text-decoration: none
+        }
+
+        .btn-group-sm>.btn,
+        .btn-sm {
+            padding: 5px 10px;
+            font-size: 12px;
+            line-height: 1.5;
+            border-radius: 3px
+        }
+
+        .btn-group-xs>.btn,
+        .btn-xs {
+            padding: 1px 5px;
+            font-size: 12px;
+            line-height: 1.5;
+            border-radius: 3px
+        }
+
+        .btn-group>.btn:active,
+        .btn-group>.btn:focus,
+        .btn-group>.btn:hover,
+        .input-group-btn>.btn:active,
+        .input-group-btn>.btn:focus,
+        .input-group-btn>.btn:hover {
+            z-index: 2
+        }
+
+        .btn-group .btn+.btn,
+        .btn-group .btn+.btn-group,
+        .btn-group .btn-group+.btn,
+        .btn-group .btn-group+.btn-group,
+        .input-group-btn>.btn+.btn {
+            margin-left: -1px
+        }
+
+        .btn-group>.btn:first-child {
+            margin-left: 0
+        }
+
+        .btn-group>.btn-group:last-child:not(:first-child)>.btn:first-child,
+        .btn-group>.btn:last-child:not(:first-child),
+        .input-group .form-control:last-child,
+        .input-group-btn:first-child>.btn-group:not(:first-child)>.btn,
+        .input-group-btn:first-child>.btn:not(:first-child),
+        .input-group-btn:last-child>.btn,
+        .input-group-btn:last-child>.btn-group>.btn {
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0
+        }
+
+        .btn-group>.btn-group:not(:first-child):not(:last-child)>.btn {
+            border-radius: 0
+        }
+
+        .btn-group>.btn-group:first-child:not(:last-child)>.btn:last-child,
+        .input-group .form-control:first-child,
+        .input-group-btn:first-child>.btn,
+        .input-group-btn:first-child>.btn-group>.btn,
+        .input-group-btn:last-child>.btn-group:not(:last-child)>.btn {
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0
+        }
+
+        [data-toggle=buttons]>.btn input[type=checkbox],
+        [data-toggle=buttons]>.btn input[type=radio],
+        [data-toggle=buttons]>.btn-group>.btn input[type=checkbox],
+        [data-toggle=buttons]>.btn-group>.btn input[type=radio] {
+            position: absolute;
+            clip: rect(0, 0, 0, 0);
+            pointer-events: none
+        }
+
+        .input-group {
+            display: table;
+            border-collapse: separate
+        }
+
+        .input-group[class*=col-] {
+            float: none;
+            padding-left: 0;
+            padding-right: 0
+        }
+
+        .input-group .form-control {
+            z-index: 2;
+            float: left;
+            width: 100%;
+            margin-bottom: 0
+        }
+
+        .input-group .form-control:focus {
+            z-index: 3
+        }
+
+        .input-group .form-control,
+        .input-group-btn {
+            display: table-cell
+        }
+
+        .input-group .form-control:not(:first-child):not(:last-child),
+        .input-group-btn:not(:first-child):not(:last-child) {
+            border-radius: 0;
+            box-shadow: none
+        }
+
+        .input-group-btn {
+            width: 1%;
+            font-size: 0
+        }
+
+        .input-group-btn:first-child>.btn,
+        .input-group-btn:first-child>.btn-group {
+            margin-right: -1px
+        }
+
+        .input-group-btn:last-child>.btn,
+        .input-group-btn:last-child>.btn-group {
+            z-index: 2;
+            margin-left: -1px
+        }
+
+        .label {
+            display: inline;
+            padding: .2em .6em .3em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            vertical-align: baseline;
+            border-radius: .25em
+        }
+
+        .btn,
+        .giftCardWrapper__details .balance-enquiry .button-holder .form-group .form-control {
+            font-size: 14px
+        }
+
+        .btn .label {
+            top: -1px
+        }
+
+        a.label:focus,
+        a.label:hover {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer
+        }
+
+        .label-primary {
+            background-color: #1eb4e1
+        }
+
+        .label-primary[href]:focus,
+        .label-primary[href]:hover {
+            background-color: #1890b4
+        }
+
+        .split-banner-div {
+            overflow: hidden;
+            width: 100%
+        }
+
+        .pull-right {
+            float: right !important
+        }
+
+        .pull-left {
+            float: left !important
+        }
+
+        .hidden,
+        .visible-sm,
+        .visible-xs {
+            display: none !important
+        }
+
+        @media (min-width:768px) and (max-width:1023px) {
+            .visible-sm {
+                display: block !important
+            }
+
+            .hidden-sm {
+                display: none !important
+            }
+        }
+
+        .text--error {
+            color: #e74c3c !important
+        }
+
+        @keyframes pulse {
+            40% {
+                transform: scale(1.6)
+            }
+
+            75% {
+                transform: scale(1.4)
+            }
+
+            100% {
+                transform: scale(1.3)
+            }
+        }
+
+        @keyframes heart-feedback {
+            20% {
+                opacity: 1
+            }
+
+            100% {
+                transform: translate3d(0, 18px, 0) scale(1.5)
+            }
+        }
+
+        @keyframes to-bottom {
+            to {
+                transform: translate3d(0, 4px, 0)
+            }
+        }
+
+        a,
+        button {
+            -webkit-transition: .4s;
+            -o-transition: .4s;
+            transition: .4s;
+            outline: 0 !important
+        }
+
+        .container-fluid {
+            max-width: 1256px;
+            padding: 0 10px
+        }
+
+        .container-fluid:after {
+            content: " ";
+            display: block;
+            clear: both
+        }
+
+        [class*=" icon-"],
+        [class^=icon-] {
+            font-family: icomoon;
+            speak: none;
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            text-indent: 0;
+            -webkit-font-smoothing: antialiased
+        }
+
+        .header {
+            position: absolute;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            right: 0
+        }
+
+        @keyframes blink {
+            50% {
+                border: 2px solid #f44863
+            }
+        }
+
+        input::-webkit-inner-spin-button,
+        input::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0
+        }
+
+        @-webkit-keyframes loadingContainer {
+            0% {
+                background-position: -800px 0
+            }
+
+            100% {
+                background-position: 800px 0
+            }
+        }
+
+        .btn {
+            font-weight: 700;
+            line-height: 19px;
+            padding: 11px 10px 10px
+        }
+
+        .btn.btn-buy-now,
+        .btn.btn-primary {
+            color: #fff;
+            background-repeat: repeat-x
+        }
+
+        @supports (-webkit-appearance:-apple-pay-button) {
+
+            .btn.btn-buy-now.btn-applePay--buy,
+            .btn.btn-buy-now.btn-applePay--setup,
+            .btn.btn-info.btn-applePay--buy,
+            .btn.btn-info.btn-applePay--setup,
+            .btn.btn-primary.btn-applePay--buy,
+            .btn.btn-primary.btn-applePay--setup,
+            .btn.btn-rewards.btn-applePay--buy,
+            .btn.btn-rewards.btn-applePay--setup,
+            .btn.btn-warning.btn-applePay--buy,
+            .btn.btn-warning.btn-applePay--setup {
+                display: inline-block;
+                -webkit-appearance: -apple-pay-button;
+                min-width: 140px;
+                min-height: 30px;
+                height: 42px
+            }
+
+            .btn.btn-buy-now.btn-applePay--buy,
+            .btn.btn-info.btn-applePay--buy,
+            .btn.btn-primary.btn-applePay--buy,
+            .btn.btn-rewards.btn-applePay--buy,
+            .btn.btn-warning.btn-applePay--buy {
+                -apple-pay-button-type: buy
+            }
+
+            .btn.btn-buy-now.btn-applePay--setup,
+            .btn.btn-info.btn-applePay--setup,
+            .btn.btn-primary.btn-applePay--setup,
+            .btn.btn-rewards.btn-applePay--setup,
+            .btn.btn-warning.btn-applePay--setup {
+                -apple-pay-button-type: set-up
+            }
+
+            .btn.btn-buy-now.btn-applePay--paymentPage,
+            .btn.btn-info.btn-applePay--paymentPage,
+            .btn.btn-primary.btn-applePay--paymentPage,
+            .btn.btn-rewards.btn-applePay--paymentPage,
+            .btn.btn-warning.btn-applePay--paymentPage {
+                width: 100%
+            }
+        }
+
+        .btn.btn-buy-now:hover,
+        .btn.btn-primary:hover {
+            opacity: .8
+        }
+
+        .btn.btn-buy-now {
+            background-image: -webkit-linear-gradient(top, #4f4f4f 0, #323232 100%);
+            background-image: -o-linear-gradient(top, #4f4f4f 0, #323232 100%);
+            background-image: linear-gradient(to bottom, #4f4f4f 0, #323232 100%);
+            background-repeat: repeat-x;
+            border-color: #171717
+        }
+
+        @-webkit-keyframes fadein {
+            from {
+                top: 0;
+                opacity: 0
+            }
+
+            to {
+                top: 30px;
+                opacity: 1
+            }
+        }
+
+        @keyframes fadein {
+            from {
+                top: 0;
+                opacity: 0
+            }
+
+            to {
+                top: 30px;
+                opacity: 1
+            }
+        }
+
+        @-webkit-keyframes fadeout {
+            from {
+                top: 30px;
+                opacity: 1
+            }
+
+            to {
+                top: 0;
+                opacity: 0
+            }
+        }
+
+        @keyframes fadeout {
+            from {
+                top: 30px;
+                opacity: 1
+            }
+
+            to {
+                top: 0;
+                opacity: 0
+            }
+        }
+
+        .promocode {
+            margin: 0 -10px;
+            padding: 0 10px;
+            border-width: 1px 0
+        }
+
+        .promocode .input-group {
+            padding: 16px 0
+        }
+
+        .promocode .input-group .btn {
+            min-width: 110px;
+            z-index: 2;
+            height: 42px
+        }
+
+        .promocode .message {
+            padding: 16px 80px 16px 28px;
+            position: relative
+        }
+
+        .promocode .message p {
+            margin: 0 !important;
+            padding: 5px 0
+        }
+
+        .promocode .message i.icon {
+            position: absolute;
+            top: 15px;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background: #00ae42;
+            border-radius: 50%
+        }
+
+        .promocode .message i.icon:after,
+        .promocode .message i.icon:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -3px 0 0 -4px;
+            height: 5px;
+            width: 9px;
+            border: solid #fff;
+            border-width: 0 0 2px 2px;
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg)
+        }
+
+        .promocode .message i.icon.icon-out {
+            background: #fff;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+            border: 1px solid #dfe1e3
+        }
+
+        .promocode .message i.icon.icon-out:after,
+        .promocode .message i.icon.icon-out:before {
+            display: block;
+            width: 10px;
+            height: 2px;
+            border: 0;
+            background: #f34723;
+            margin: -1px 0 0 -5px
+        }
+
+        .form-group .error-text,
+        h2 .error-text,
+        label.error {
+            background: #fadbd8;
+            border-radius: 2px 2px 0 0;
+            float: right;
+            font-size: 13px;
+            font-style: normal;
+            margin: 0 0 -1px;
+            padding: 4px 10px;
+            color: #e74c3c
+        }
+
+        .promocode .message i.icon.icon-out:after {
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg)
+        }
+
+        label.error {
+            display: block
+        }
+
+        .error-text {
+            color: #e74c3c;
+            margin-bottom: 16px;
+            display: block
+        }
+
+        .card-error {
+            float: left;
+            margin: -14px 6px 3px
+        }
+
+        @media only screen and (max-width:767px) {
+            .card-error {
+                margin: -12px 6px -1px
+            }
+        }
+
+        select.form-control+.error {
+            position: absolute;
+            right: 0;
+            top: 68px
+        }
+
+        .black {
+            background: #000 !important
+        }
+
+        .black3 {
+            background: #1f2123 !important
+        }
+
+        .blue {
+            background: #1eb4e1 !important
+        }
+
+        .blue-online {
+            background: #4573c7 !important
+        }
+
+        @keyframes applePayLoader {
+
+            0%,
+            100%,
+            80% {
+                transform: scale(0)
+            }
+
+            40% {
+                transform: scale(1)
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        .form-group .error-text,
+        h2 .error-text {
+            font-weight: 400
+        }
+
+        .form-group input.error {
+            border: 1px solid #f44863
+        }
+
+        .form-group input.error:focus {
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(200, 201, 198, .6);
+            border: 1px solid #d7ddde
+        }
+
+        @-webkit-keyframes scrollText {
+            from {
+                transform: translateX(0)
+            }
+
+            to {
+                transform: translateX(-50%)
+            }
+        }
+
+        @keyframes scrollText {
+            from {
+                transform: translateX(0)
+            }
+
+            to {
+                transform: translateX(-50%)
+            }
+        }
+
+        @-webkit-keyframes scrollTextAr {
+            from {
+                transform: translateX(0)
+            }
+
+            to {
+                transform: translateX(50%)
+            }
+        }
+
+        @keyframes scrollTextAr {
+            from {
+                transform: translateX(0)
+            }
+
+            to {
+                transform: translateX(50%)
+            }
+        }
+
+        @keyframes loading-spin {
+            from {
+                transform: rotate(0)
+            }
+
+            to {
+                transform: rotate(360deg)
+            }
+        }
+
+        .giftCardWrapper {
+            color: #737982
+        }
+
+        @keyframes slide-down-text1 {
+            0% {
+                opacity: 0;
+                transform: translateY(30px)
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(50px)
+            }
+        }
+
+        @keyframes slide-down-text2 {
+            0% {
+                opacity: 0;
+                transform: translateY(70px)
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(90px)
+            }
+        }
+
+        @keyframes slide-down-img1 {
+            0% {
+                opacity: 0;
+                transform: translateY(30px)
+            }
+
+            50% {
+                opacity: 1;
+                transform: translateY(50px)
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(45px)
+            }
+        }
+
+        @keyframes slide-down-img2 {
+            0% {
+                opacity: 0;
+                transform: translateY(185px)
+            }
+
+            50% {
+                opacity: 1;
+                transform: translateY(175px)
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(177px)
+            }
+        }
+
+        .giftCardWrapper ._right-pad {
+            padding-right: 2%
+        }
+
+        .giftCardWrapper ._link {
+            font-size: 15px;
+            text-align: left;
+            margin: 20px 0;
+            color: #303ab2
+        }
+
+        .giftCardWrapper__details {
+            border-bottom: 1px solid #edeff1;
+            margin: 0 -10px;
+            padding: 20px 10px 10px;
+            position: relative
+        }
+
+        .giftCardWrapper__details__title {
+            font-size: 24px;
+            margin: 10px 0 20px;
+            color: #242428;
+            font-weight: 300
+        }
+
+        .giftCardWrapper__details__steps-header {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center
+        }
+
+        .giftCardWrapper__details__steps-header.max {
+            display: none
+        }
+
+        .giftCardWrapper__details__steps {
+            list-style: none;
+            counter-reset: counter;
+            padding: 0;
+            margin-right: 8px;
+            font-size: 15px;
+            text-align: left
+        }
+
+        .giftCardWrapper__details__steps>li {
+            display: flex;
+            position: relative;
+            line-height: 23px
+        }
+
+        .giftCardWrapper__details__steps>li figure {
+            text-align: center
+        }
+
+        .giftCardWrapper__details__steps>li figure ._how-to-use {
+            width: 200px;
+            margin-top: 20px
+        }
+
+        .giftCardWrapper__details__steps>li:first-child {
+            margin-top: 20px
+        }
+
+        .giftCardWrapper__details__steps>li:not(:last-child) {
+            margin-bottom: 20px
+        }
+
+        .giftCardWrapper__details__steps>li:before {
+            flex-shrink: 0;
+            content: counter(counter);
+            counter-increment: counter;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #edeff1;
+            color: #737982;
+            text-align: center;
+            font-size: 14px;
+            margin-right: 15px
+        }
+
+        .giftCardWrapper__details__steps .max {
+            display: none
+        }
+
+        .giftCardWrapper__details__steps._number>li:before {
+            content: "•";
+            background-color: transparent;
+            margin-right: 5px
+        }
+
+        .giftCardWrapper__details .balance-enquiry {
+            overflow: hidden;
+            padding: 0 15px 15px
+        }
+
+        .giftCardWrapper__details .balance-enquiry .error-msg-holder {
+            display: none;
+            padding: 5px 30px 10px
+        }
+
+        .giftCardWrapper__details .balance-enquiry .error-msg-holder i.icon-out {
+            top: 5px
+        }
+
+        .giftCardWrapper__details .balance-enquiry .error-msg-holder .error-msg {
+            color: #e74c3c;
+            font-size: 15px;
+            text-align: left
+        }
+
+        .giftCardWrapper__details .balance-enquiry .balance-text {
+            font-size: 18px;
+            text-align: center;
+            margin: 0
+        }
+
+        .giftCardWrapper__details .balance-enquiry .button-holder {
+            text-align: left
+        }
+
+        .giftCardWrapper__details .balance-enquiry .button-holder .form-group {
+            display: inline-block;
+            margin: 0;
+            width: 100%
+        }
+
+        .giftCardWrapper__details .balance-enquiry .button-holder .form-group .error-text {
+            margin: 0;
+            padding: 4px 6px
+        }
+
+        .giftCardWrapper__details .balance-enquiry .button-holder .form-group .balance-button {
+            width: 100%
+        }
+
+        .giftCardWrapper__details .balance-enquiry .button-holder .form-group._width {
+            width: 49%
+        }
+
+        .giftCardWrapper__details .balance-enquiry._available-amount {
+            display: none;
+            font-size: 18px;
+            padding: 2px 12px;
+            line-height: 26px;
+            text-align: left
+        }
+
+        .giftCardWrapper__details .balance-enquiry._available-amount .amount {
+            color: #00ae42;
+            font-weight: 700
+        }
+
+        .giftCardWrapper__details .balance-enquiry._available-amount .card_link {
+            color: #303ab2;
+            font-size: 20px
+        }
+
+        .giftCardWrapper__details:last-child {
+            border-bottom: none
+        }
+
+        .giftCardWrapper__details._balance {
+            background: #edeff1
+        }
+
+        .giftCard__banner {
+            min-height: 444px;
+            color: #fff;
+            position: relative;
+            padding-bottom: 50px
+        }
+
+        .giftCard__banner--max {
+            color: #000;
+            background-image: linear-gradient(75deg, #acdcff, #f6ffe0)
+        }
+
+        .giftCard__banner--max.in {
+            color: #fff;
+            background-image: linear-gradient(253deg, #ffd2ec, #2b86c5)
+        }
+
+        .giftCard__bannerContent--right,
+        .giftCard__bannerSubtitle,
+        .giftCard__bannerTitle,
+        .giftCard__button--black {
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: 1s ease-out 1s forwards slide-down
+        }
+
+        .giftCard__bannerContent {
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+            justify-content: flex-start;
+            text-align: center
+        }
+
+        .giftCard__bannerContent--right {
+            align-items: center;
+            text-align: center;
+            animation-delay: 1.9s
+        }
+
+        .giftCard__bannerContent--max {
+            color: #000
+        }
+
+        .giftCard__bannerTitle {
+            font-size: 25px;
+            line-height: 32px;
+            font-weight: 700
+        }
+
+        .giftCard__bannerSubtitle {
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            animation-delay: 1.3s
+        }
+
+        .giftCard__cardImg {
+            max-width: 413px;
+            width: 100%
+        }
+
+        .giftCard__cardShadow {
+            width: 100%;
+            max-width: 435px;
+            margin-top: 30px;
+            opacity: 0;
+            transform: scaleX(.3);
+            animation: 1s ease-out 1.9s forwards scale-shadow
+        }
+
+        .giftCard__roundedBG {
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            height: 50px;
+            width: 100%;
+            background: url(https://i1.lmsin.net/website_images/in/giftcards/banner-rounded.png) top center/cover no-repeat
+        }
+
+        .giftCard__button {
+            width: 100%;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3px;
+            font-weight: 700;
+            cursor: pointer;
+            color: #fff !important;
+            font-size: 16px
+        }
+
+        .giftCard__button--black {
+            background-color: #19191c;
+            animation-delay: 1.6s
+        }
+
+        .giftCard__button--blue {
+            background-color: #303ab2;
+            margin: 30px 0
+        }
+
+        .giftCard__macImg {
+            max-width: 525px
+        }
+
+        @keyframes slide-down {
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        @keyframes scale-shadow {
+            to {
+                opacity: 1;
+                transform: scaleX(1)
+            }
+        }
+
+        @keyframes shine-lines {
+            0% {
+                background-position: -100px
+            }
+
+            100%,
+            40% {
+                background-position: 140px
+            }
+        }
+
+        @media (max-width:767px) {
+            .visible-xs {
+                display: block !important
+            }
+
+            .hidden-xs {
+                display: none !important
+            }
+
+            .header .container-fluid {
+                padding: 0;
+                overflow: hidden
+            }
+
+            .promocode>div:nth-child(2)~div .input-group {
+                margin: 0 -10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-top: 1px solid #edeff1
+            }
+
+            .promocode .input-group .form-control {
+                height: 42px;
+                font-size: 12px
+            }
+
+            .promocode .input-group .btn {
+                line-height: 20px;
+                padding: 9px 10px 8px;
+                min-width: 95px;
+                text-transform: none;
+                font-size: 14px
+            }
+
+            .promocode .message .btn-link {
+                position: absolute;
+                top: 7px;
+                right: 0;
+                width: 90px;
+                padding: 8px 5px;
+                color: #3d464d;
+                text-align: center;
+                text-decoration: none
+            }
+
+            .promocode .message.gift-holder {
+                padding-left: 0;
+                border-bottom: 1px solid #edeff1
+            }
+
+            body {
+                min-height: 100%
+            }
+        }
+
+        @media (min-width:768px) {
+            body {
+                min-width: 320px
+            }
+
+            .header {
+                top: 84px
+            }
+
+            .header a {
+                color: #71787f;
+                font-weight: 400
+            }
+
+            .header a:focus {
+                text-decoration: none
+            }
+
+            .btn.btn-primary {
+                font-size: 16px
+            }
+
+            .btn.btn-primary:hover {
+                opacity: .8
+            }
+
+            .promocode {
+                padding: 13px 0
+            }
+
+            .promocode .message {
+                padding-top: 0;
+                padding-bottom: 5px;
+                padding-right: 0
+            }
+
+            .promocode .message i.icon {
+                top: 5px;
+                left: 0
+            }
+
+            .giftCardWrapper ._mar {
+                margin: 40px 0
+            }
+
+            .giftCardWrapper ._right-pad {
+                padding-right: 4%
+            }
+
+            .giftCardWrapper ._left-pad {
+                padding-left: 4%
+            }
+
+            .giftCardWrapper ._link,
+            .giftCard__bannerSubtitle {
+                font-size: 18px
+            }
+
+            .giftCardWrapper__details {
+                text-align: left;
+                margin: 0;
+                padding: 0
+            }
+
+            .giftCardWrapper__details .gift-article {
+                display: table
+            }
+
+            .giftCardWrapper__details .gift-text {
+                display: table-cell;
+                vertical-align: middle;
+                max-width: none;
+                text-align: left
+            }
+
+            .giftCardWrapper__details .gift-text._img {
+                width: 50%
+            }
+
+            .giftCardWrapper__details .gift-text._img img {
+                width: 100%
+            }
+
+            .giftCardWrapper__details__title {
+                font-size: 30px;
+                text-align: left
+            }
+
+            .giftCardWrapper__details__steps-header {
+                text-align: left
+            }
+
+            .giftCardWrapper__details__steps {
+                font-size: 16px
+            }
+
+            .giftCardWrapper__details__steps>li,
+            .giftCard__bannerContent {
+                text-align: left
+            }
+
+            .giftCardWrapper__details__steps>li:before {
+                font-size: 14px
+            }
+
+            .giftCardWrapper__details .balance-enquiry {
+                padding-top: 20px
+            }
+
+            .giftCardWrapper__details .balance-enquiry .button-holder .form-group._width {
+                width: 49.7%
+            }
+
+            .giftCardWrapper__details:last-child {
+                border-bottom: none
+            }
+
+            .giftCardWrapper__details._balance {
+                border-radius: 5px
+            }
+
+            .giftCard__bannerTitle {
+                line-height: 42px;
+                font-size: 40px
+            }
+
+            .giftCard__cardImg {
+                width: 413px
+            }
+
+            .giftCard__button {
+                width: 229px
+            }
+        }
+
+        @media (min-width:1024px) {
+            .giftCardWrapper__details .balance-enquiry {
+                padding: 20px;
+                height: 102px;
+                line-height: 10px
+            }
+
+            .giftCardWrapper__details .balance-enquiry .error-msg-holder {
+                position: absolute;
+                top: 5px;
+                margin-left: 65px
+            }
+
+            .giftCardWrapper__details .balance-enquiry .error-msg-holder i.icon-out {
+                top: 1px
+            }
+
+            .giftCardWrapper__details .balance-enquiry .error-msg-holder .error-msg {
+                color: #e74c3c;
+                margin: 0;
+                font-size: 16px;
+                text-align: center
+            }
+
+            .giftCardWrapper__details .balance-enquiry .balance-text {
+                width: 40%;
+                float: left;
+                text-align: center;
+                margin: 0;
+                line-height: 56px;
+                font-size: 20px
+            }
+
+            .giftCardWrapper__details .balance-enquiry .button-holder {
+                width: 53%;
+                float: left;
+                text-align: right
+            }
+
+            .giftCardWrapper__details .balance-enquiry .button-holder .form-group {
+                display: inline-block;
+                margin: 0 0 0 10px;
+                width: 42%;
+                vertical-align: top
+            }
+
+            .giftCardWrapper__details .balance-enquiry .button-holder .form-group .error-text {
+                margin: 0
+            }
+
+            .giftCardWrapper__details .balance-enquiry .button-holder .form-group .form-control {
+                font-size: 14px
+            }
+
+            .giftCardWrapper__details .balance-enquiry .button-holder .form-group .balance-button {
+                width: 184px;
+                margin-top: 9px
+            }
+
+            .giftCardWrapper__details .balance-enquiry .button-holder .form-group._width {
+                width: 24%;
+                padding-right: 2%
+            }
+
+            .giftCardWrapper__details .balance-enquiry._available-amount {
+                font-size: 20px;
+                text-align: center;
+                line-height: 100px
+            }
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="https://cdn.c1.amplience.net/c/max/max_giftcardinfo_en" onload="this.media='all'"> -->
+</head>
+
+<body>
+    <div class="giftCardWrapper giftCard" id="giftCardWrapper">
+        <div class="giftCard__banner giftCard__banner--max giftCard__banner--max-ae">
+            <div class="giftCard__roundedBG"></div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div
+                        class="col-sm-6 giftCard__bannerContent giftCard__bannerContent--maxae giftCard__bannerContent--left">
+                        <h4 class="giftCard__bannerTitle">
+                            Now easily buy or use your Gift Cards online.</h4>
+                        <p class="giftCard__bannerSubtitle">
+                            Treat your loved ones or yourself to a Gift Card that can be used online or on our apps. All
+                            it takes is
+                            a few easy steps. Try it out today!</p>
+                        <a class="giftCard__button giftCard__button--black" href="/eg/en/c/giftcard">Buy a Gift Card</a>
+                    </div>
+                    <div class="col-sm-6 giftCard__bannerContent giftCard__bannerContent--right">
+                        <img class="giftCard__cardImg"
+                            src="https://i1.lmsin.net/website_images/ae/giftcards/max/card.png">
+                        <img class="giftCard__cardShadow"
+                            src="https://i1.lmsin.net/website_images/in/giftcards/shadow.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+
+            <div class="giftCardWrapper__details _mar">
+                <div class="gift-article _bottom">
+                    <figure class="gift-text _img hidden-xs">
+                        <picture data-alt="Shop Gift Online">
+                            <img class="giftCard__macImg"
+                                src="https://i1.lmsin.net/website_images/ae/giftcards/max/macbook-front-view@2x.png">
+                        </picture>
+                    </figure>
+                    <div class="gift-text">
+                        <h3 class="giftCardWrapper__details__title">
+                            Buy a Gift Card online.</h3>
+                        <p class="giftCardWrapper__details__steps-header">
+                            You can now easily order a Gift Card online and have it delivered as you would any other
+                            product.<br><br> Here's what you need to do:</p>
+                        <ol class="giftCardWrapper__details__steps">
+                            <li>Hit Buy a Gift Card and you’ll go to a page with Gift Card options.</li>
+                            <li>Select your preferred amount and the number of cards you need. If you wish, you can
+                                split your
+                                amount over multiple cards.</li>
+                            <li>Checkout by adding the Gift Card to your basket or with one-click using our Buy Now
+                                feature.</li>
+                            <li>That's it! Your Gift Card will be dispatched to your door.</li>
+                        </ol>
+                        <a class="giftCard__button giftCard__button--blue" href="/eg/en/c/giftcard">Buy a Gift Card</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="giftCardWrapper__details _mar">
+                <div class="gift-article _bottom">
+                    <div class="gift-text">
+                        <h3 class="giftCardWrapper__details__title">
+                            Shop with your Gift Card online.</h3>
+                        <p class="giftCardWrapper__details__steps-header">
+                            Pay with your Gift Card either online, on our app or in-store. <br class="hidden-xs">Here's
+                            how to use
+                            it online:</p>
+                        <ol class="giftCardWrapper__details__steps">
+                            <li>Find a product you like and proceed to checkout.</li>
+                            <li>
+                                At the bottom of your Basket page, enter your 25-digit Gift Card number and 4-digit pin
+                                and hit Apply.
+                                This will allow you to see how much money you can spend from your Gift Card.<figure
+                                    class="visible-xs">
+                                    <picture data-alt="Shop Gift Online">
+                                        <img class="_how-to-use"
+                                            src="https://i1.lmsin.net/website_images/ae/giftcards/how-to-use_mobile@2x.png">
+                                    </picture>
+                                </figure>
+                            </li>
+                            <li>Click on Checkout Now and complete your shopping.&nbsp;It’s that easy!</li>
+                        </ol>
+                    </div>
+                    <figure class="gift-text _img hidden-xs">
+                        <picture data-alt="Shop Gift Online">
+                            <img src="https://i1.lmsin.net/website_images/ae/giftcards/how-to-use.png">
+                        </picture>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="giftCardWrapper__details _balance _mar promocode">
+                <form class="validate-form balance-enquiry _enquiry" novalidate="novalidate" id="giftCardBalanceCheck">
+                    <div class="message error-msg-holder" style="display: none;">
+                        <i class="icon icon-out"></i>
+                        <p class="error-msg"></p>
+                    </div>
+                    <p class="balance-text pull-left">
+                        Need to check your Gift Card balance?</p>
+                    <fieldset class="button-holder pull-left">
+                        <div class="row">
+                            <div class="form-group">
+                                <label id="label-01" for="card-no"></label>
+                                <input id="card-no" name="cardNumber" class="form-control card-no" type="text" value=""
+                                    pattern="\d*" placeholder="Please enter your 25-digit card number"
+                                    data-msg-maxlength="Please enter a 25 digit number" minlength="25"
+                                    data-msg-minlength="Please enter a 25 digit number" maxlength="25" required=""
+                                    autocomplete="off" data-msg-required="Please enter a 25 digit number"
+                                    aria-required="true" aria-invalid="false" onblur="validateGCCardNo()">
+                                <em id="card-no-error" class="error error-text" style="display: none;">Please enter a 25
+                                    digit
+                                    number</em>
+
+                            </div>
+                            <div class="form-group _width _right-pad">
+                                <label id="label-02" for="pin-no"></label>
+                                <input id="pin-no" name="pin" class="form-control pin-no" type="password" value=""
+                                    pattern="[0-9]*" placeholder="Enter your pin"
+                                    data-msg-maxlength="Enter 4 digit number" minlength="4"
+                                    data-msg-minlength="Enter 4 digit number" maxlength="4" required=""
+                                    autocomplete="off" data-msg-required="Enter your pin" aria-required="true"
+                                    aria-invalid="false" onblur="validateGCPin()">
+                                <em id="pin-no-error" class="error error-text" style="display: none;"></em>
+                            </div>
+                            <div class="form-group _width">
+                                <button type="submit" id="gift-card-check-balance-button"
+                                    class="btn btn-primary balance-button gift-submit-button">
+                                    Check Your Balance</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <p class="balance-enquiry _available-amount" id="balanceCheckInfo">
+                    You have <span class="amount"></span> in your Gift Card. Check the balance of another card <a
+                        href="javascript:void(0);" class="card_link" onclick="checkAnotherCard()">here</a>.</p>
+            </div>
+
+
+            <div class="giftCardWrapper__details _mar">
+                <div class="gift-article _bottom">
+                    <div class="gift-text">
+                        <h3 class="giftCardWrapper__details__title">
+                            Here's the fine print:</h3>
+                        <ul class="giftCardWrapper__details__steps _number">
+                            <li>This Gift Card is redeemable ONLY at Max stores and maxfashion.com in the Egypt.</li>
+                            <li>Max reserves the right to alter any /all the terms and conditions of this Gift Card at
+                                any time
+                                without prior notice. Any dispute shall be referred to Landmark Retail Investment LLC
+                                Max Division
+                                (The Company) and the decision of the Company shall be final.</li>
+                            <li>For balance enquiry and expiry, customer can call local call center or check on
+                                maxfashion.com.
+                                Customers can also visit their nearest store to get the information from Customer
+                                Service Counter.
+                            </li>
+                            <li>This Gift Card is Valid for one year (12 Months) from the date of issue or last reloads.
+                            </li>
+                            <li>This Gift Card cannot be exchanged for cash either in full or part.</li>
+                            <li>This Gift Card can be redeemed for part value.</li>
+                            <li>Should the purchase value exceed the value of the Gift Card, the differential value
+                                should be paid
+                                by the customer who redeems the Gift Card.</li>
+                            <li>No replacement / compensation are permissible /payable for lost Gift Card.</li>
+                            <li>Mutilated or defaced Gift Cards will not be honored.</li>
+                            <li>All disputes are subject to Egypt Court Jurisdiction&nbsp;and the losing party shall pay
+                                all the
+                                cost and expense occur by the other party in such case.</li>
+                            <li>Gift Card once sold cannot be returned or refunded.</li>
+                            <li>Items purchased online with the Gift Card are refundable to My Credit in the registered
+                                user's
+                                account and as a refund voucher for non-registered users.</li>
+                        </ul>
+                        <p>
+                            <a class="_link" href="https://helpeg.maxfashion.com/en/support/home">
+                                Learn more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        // To Prevent non-numerics from being entered
+        function getNode(targetAttr) {
+            return document.querySelector(targetAttr);
+        }
+        const baseUrl = window.location.origin;
+        let url = `${baseUrl}/api/nps/npsCategories?isCncFlag=false&type=CHECKOUT_FLOW&Accept-Language=en`;
+        function fetchDataFromApi() {
+            fetch(url, {
+                headerS: {
+                    "User-Agent": "Landmark123",
+                    "X-Forwaded-For": "192.23.23.33",
+                    "Accept-Language": 'en',
+                    "X-Context-Request": "{ 'applicationId': '102', 'tenantId': '5DF1363059675161A85F576D' }"
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+        }
+        let cardNumberInput = getNode('#card-no');
+        const errMsgEl = getNode('#card-no-error');
+        const pinNumberInput = getNode('#pin-no');
+        const pinErrMsgEl = getNode('#pin-no-error');
+        const form = getNode('#giftCardBalanceCheck');
+        const balInfoSection = getNode('#balanceCheckInfo');
+
+        cardNumberInput.addEventListener('input', () => {
+            cardNumberInput.value = cardNumberInput.value.replace(/\D/g, '');
+            if (cardNumberInput.value.length === 25) {
+                errMsgEl.style.display = 'none';
+            }
+        });
+        // To Prevent non-numerics from being entered
+
+        pinNumberInput.addEventListener('input', () => {
+            pinNumberInput.value = pinNumberInput.value.replace(/\D/g, '');
+            if (pinNumberInput.value.length === 4) {
+                pinErrMsgEl.style.display = 'none';
+            }
+        });
+        // Validation on focus out
+        function validateGCCardNo() {
+            if (cardNumberInput.value.length < 25) {
+                cardNumberInput.classList.add('error')
+                errMsgEl.style.display = 'inline-block';
+            } else {
+                cardNumberInput.classList.remove('error')
+            }
+        }
+        function validateGCPin() {
+            const errMsgEl = getNode('#pin-no-error');
+            if (pinNumberInput.value.length < 4) {
+                pinNumberInput.classList.add('error')
+                errMsgEl.style.display = 'inline-block';
+                if (pinNumberInput.value.length === 0) {
+                    errMsgEl.textContent = "Enter your pin"
+                } else {
+                    errMsgEl.textContent = "Enter 4 digit number"
+                }
+            } else {
+                pinNumberInput.classList.remove('error')
+                errMsgEl.style.display = 'none';
+            }
+        }
+        // Submit method
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const formDataEntries = new FormData(event.target).entries();
+            const { cardNumber, pin } = Object.fromEntries(formDataEntries);
+            if (cardNumber.length < 25 || pin.length < 4) {
+                if (cardNumber.length < 25) {
+                    cardNumberInput.classList.add('error');
+                    errMsgEl.style.display = 'inline-block';
+                }
+                if (pin.length < 4) {
+                    pinNumberInput.classList.add('error');
+                    pinErrMsgEl.style.display = 'inline-block';
+                    pinErrMsgEl.textContent = 'Enter your pin';
+                }
+                return
+            }
+            event.target.reset();
+            fetchDataFromApi({ cardNumber, pin })
+            // api handler here.
+            form.style.display = 'none';
+            balInfoSection.style.display = 'block';
+            const amtTextNode = getNode(".amount")
+            amtTextNode.textContent = 'AED 500'
+            console.log("payload", { cardNumber, pin })
+        });
+        function checkAnotherCard() {
+            form.style.display = 'block';
+            balInfoSection.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
